@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    //传入数组
     FilterListView *listView = [[FilterListView alloc]initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 45) createTitles:@"状态" withDataArray:@[@"全部",@"审核中",@"抢单中",@"运力匹配中"] withSelectData:@[@"0",@"3",@"6",@"5"]];
     listView.backgroundColor = [UIColor cyanColor];
     listView.delegate = self;
